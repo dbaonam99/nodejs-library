@@ -1,0 +1,17 @@
+extends ../layouts/common
+
+block content
+  h1 Infomation of User
+
+  form(action="/users/set", method="POST")
+    input(name="name", type="text")
+    input(name="id", type="hidden", value=users.id)
+    button Update
+
+  p Tên:
+    span= users.name
+  p Tuổi: 
+    span= users.age 
+  form(action="/users/remove", method="POST")
+    input(name="id", type="hidden", value=users.id)
+    button Delete user

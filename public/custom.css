@@ -1,0 +1,14 @@
+* { 
+/*   display: none !important;  */
+}
+.w-5 {
+    width: 50%;
+}
+.button {
+  width: 100px;
+}
+@media only screen and (max-width: 550px) {
+  .w-5 {
+    width: 100%;
+  }
+}

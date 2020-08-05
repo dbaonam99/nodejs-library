@@ -1,0 +1,33 @@
+extends ../layouts/common
+
+block content
+  h1 Books List
+    
+  form.d-flex.flex-column.w-5(action="/transaction/add", method="POST")
+    .form-group
+    label Chọn sách
+    select(name="bookID")
+      each book in books
+        option= book.title
+    .form-group
+    label Chọn người dùng
+    select(name="userID")
+      each user in users
+        option= user.name
+    .form-group
+    input.form-control(name="isComplete", type="hidden", value="false")
+    button.btn.btn-primary.button Thêm giao dịch
+
+  p Transactions list:
+  ul
+    each tran in trans
+      li
+        span= tran.bookID
+        span &nbsp
+        span= tran.userID
+        span &nbsp
+        a(href="/transaction/info/" + tran.id) More...
+        span &nbsp
+        a(href="/transaction/" + tran.id + "/complete")= tran.isComplete
+  p
+    a(href="/") Home...

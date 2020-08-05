@@ -1,0 +1,558 @@
+{
+  "books": [
+    {
+      "id": "c917d62f-8160-475a-8ef7-aec2ecd92a92",
+      "title": "PIMCO Income Strategy Fund II",
+      "des": "sapien non mi integer ac neque duis bibendum morbi non"
+    },
+    {
+      "id": "6dfa9616-3f3e-4319-b38d-0ae5f99f9226",
+      "title": "Graham Holdings Company",
+      "des": "lobortis vel dapibus at diam nam tristique tortor eu pede"
+    },
+    {
+      "id": "80e42397-2935-4986-8c14-8104e50ba3a1",
+      "title": "Bancorp 34, Inc.",
+      "des": "curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus"
+    },
+    {
+      "id": "0277835b-3974-49dd-a862-9282fc89ac72",
+      "title": "GenVec, Inc.",
+      "des": "faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus"
+    },
+    {
+      "id": "2f539000-96a2-49ca-b431-ba71c6c6a9b7",
+      "title": "Standard Motor Products, Inc.",
+      "des": "accumsan tellus nisi eu orci mauris lacinia sapien quis libero"
+    },
+    {
+      "id": "a183776d-3e19-4b5c-90bc-0b6ff5e54ab0",
+      "title": "First Trust Brazil AlphaDEX Fund",
+      "des": "in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae"
+    },
+    {
+      "id": "7d230226-7e0b-4dc3-a238-6db180e6b904",
+      "title": "Digiliti Money Group, Inc.",
+      "des": "vulputate justo in blandit ultrices enim lorem ipsum dolor sit"
+    },
+    {
+      "id": "fa35f721-3a14-4430-81d6-730cca86e31a",
+      "title": "First Trust Low Beta Income ETF",
+      "des": "sapien a libero nam dui proin leo odio porttitor id"
+    },
+    {
+      "id": "a1e02794-7691-4a6e-86e2-3272ffdd507e",
+      "title": "MTGE Investment Corp.",
+      "des": "id ligula suspendisse ornare consequat lectus in est risus auctor"
+    },
+    {
+      "id": "8cc1a3eb-e1fb-4475-bae0-213b36dbac0a",
+      "title": "Public Storage",
+      "des": "mauris lacinia sapien quis libero nullam sit amet turpis elementum"
+    },
+    {
+      "id": "d1651e47-ab9d-422c-bc90-d09d8a9505ff",
+      "title": "The Medicines Company",
+      "des": "metus sapien ut nunc vestibulum ante ipsum primis in faucibus"
+    },
+    {
+      "id": "4452cec4-2bd9-49f0-9ffd-e10cd97d3024",
+      "title": "PowerShares DWA Energy Momentum Portfolio",
+      "des": "tortor quis turpis sed ante vivamus tortor duis mattis egestas"
+    },
+    {
+      "id": "1131807e-4933-45cf-addb-caff5332ce83",
+      "title": "Lazard Ltd.",
+      "des": "leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices"
+    },
+    {
+      "id": "93c4427a-3770-4be8-86b1-a5a139d57a83",
+      "title": "Innodata Inc.",
+      "des": "sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at"
+    },
+    {
+      "id": "3d5abb5f-7507-4692-a663-4514ff7ae213",
+      "title": "Stantec Inc",
+      "des": "vitae consectetuer eget rutrum at lorem integer tincidunt ante vel"
+    },
+    {
+      "id": "95ad6605-b933-4661-ba69-bfb48d420ca9",
+      "title": "Weibo Corporation",
+      "des": "consequat lectus in est risus auctor sed tristique in tempus"
+    },
+    {
+      "id": "62d8445e-1e42-41ec-9c74-a063fe0860d3",
+      "title": "Sasol Ltd.",
+      "des": "urna pretium nisl ut volutpat sapien arcu sed augue aliquam"
+    },
+    {
+      "id": "1c03eb9c-5757-403e-88ce-497aec30af39",
+      "title": "Acacia Communications, Inc.",
+      "des": "morbi non lectus aliquam sit amet diam in magna bibendum"
+    },
+    {
+      "id": "b4717159-27cb-459a-96ef-fd3246668e20",
+      "title": "Neenah Paper, Inc.",
+      "des": "ut massa quis augue luctus tincidunt nulla mollis molestie lorem"
+    },
+    {
+      "id": "d701e621-46cc-427e-9c91-cd5a2bce1ee8",
+      "title": "WageWorks, Inc.",
+      "des": "sed nisl nunc rhoncus dui vel sem sed sagittis nam"
+    },
+    {
+      "id": "ccc65c4f-6da8-4b1e-b0c1-9e136f1aef4b",
+      "title": "Prudential Bancorp, Inc.",
+      "des": "nulla sed accumsan felis ut at dolor quis odio consequat"
+    },
+    {
+      "id": "4cf6a228-a82a-4454-b792-fd399dff55aa",
+      "title": "The Hackett Group, Inc.",
+      "des": "dui nec nisi volutpat eleifend donec ut dolor morbi vel"
+    },
+    {
+      "id": "8dbdbfe2-7acc-4323-8390-8fada77ed8c1",
+      "title": "TRI Pointe Group, Inc.",
+      "des": "tristique fusce congue diam id ornare imperdiet sapien urna pretium"
+    },
+    {
+      "id": "71684df4-1167-4c7f-8eaa-8ae90620b1c7",
+      "title": "Open Text Corporation",
+      "des": "ipsum integer a nibh in quis justo maecenas rhoncus aliquam"
+    },
+    {
+      "id": "a176d827-6d65-41e1-883a-5b99a3c2616b",
+      "title": "Noble Midstream Partners LP",
+      "des": "molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget"
+    },
+    {
+      "id": "fcdebf07-5583-4fd6-ab03-c29362e610df",
+      "title": "iShares 20+ Year Treasury Bond ETF",
+      "des": "convallis nunc proin at turpis a pede posuere nonummy integer"
+    },
+    {
+      "id": "9603a5c8-b6a0-41db-9262-14369dc5343c",
+      "title": "Banco Santander, S.A.",
+      "des": "vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem"
+    },
+    {
+      "id": "8fefbc19-2931-4412-bfcf-f2c3ef1e4af8",
+      "title": "BlackRock Income Trust Inc. (The)",
+      "des": "pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus"
+    },
+    {
+      "id": "525a7074-872e-4797-bbf4-f7ba7c37dcd8",
+      "title": "Legacy Reserves LP",
+      "des": "nulla nunc purus phasellus in felis donec semper sapien a"
+    },
+    {
+      "id": "fac96387-b68f-482a-a049-91908b863709",
+      "title": "Miller/Howard High Income Equity Fund",
+      "des": "interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus"
+    },
+    {
+      "id": "d674748b-df61-471c-a3a0-92750b412ab3",
+      "title": "Colgate-Palmolive Company",
+      "des": "eget tincidunt eget tempus vel pede morbi porttitor lorem id"
+    },
+    {
+      "id": "d0810912-6c1b-4a73-8c14-f6b31cb1dda7",
+      "title": "Bristow Group Inc",
+      "des": "dui maecenas tristique est et tempus semper est quam pharetra"
+    },
+    {
+      "id": "1c9ef2f1-05bc-4b01-94ea-0e81894e5fe5",
+      "title": "Carter's, Inc.",
+      "des": "donec ut mauris eget massa tempor convallis nulla neque libero"
+    },
+    {
+      "id": "b042c1c7-3c85-4695-8e2f-ea31aa685caf",
+      "title": "Carolina Financial Corporation",
+      "des": "ac enim in tempor turpis nec euismod scelerisque quam turpis"
+    },
+    {
+      "id": "87d39b43-c740-4f82-805d-3d668928256f",
+      "title": "AT&T Inc.",
+      "des": "nullam porttitor lacus at turpis donec posuere metus vitae ipsum"
+    },
+    {
+      "id": "4c066238-4ad7-46b2-a715-d44232721d91",
+      "title": "Murphy USA Inc.",
+      "des": "fusce consequat nulla nisl nunc nisl duis bibendum felis sed"
+    },
+    {
+      "id": "9c346d79-1a9b-4c9f-b036-676026e00647",
+      "title": "Prudential Public Limited Company",
+      "des": "ut ultrices vel augue vestibulum ante ipsum primis in faucibus"
+    },
+    {
+      "id": "96f18c30-c893-4dba-b024-68e1b043dc6d",
+      "title": "Emerge Energy Services LP",
+      "des": "sit amet turpis elementum ligula vehicula consequat morbi a ipsum"
+    },
+    {
+      "id": "7b88708e-054c-4930-a66d-065aca674fac",
+      "title": "Pain Therapeutics, Inc.",
+      "des": "justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla"
+    },
+    {
+      "id": "fc7e9ca4-0af1-421e-8b0b-dbc0ac970af0",
+      "title": "ANI Pharmaceuticals, Inc.",
+      "des": "facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt"
+    },
+    {
+      "id": "0184b590-3134-45d2-b8a5-a7c842a8f7cf",
+      "title": "MIND C.T.I. Ltd.",
+      "des": "augue luctus tincidunt nulla mollis molestie lorem quisque ut erat"
+    },
+    {
+      "id": "d367973f-616f-47cf-b974-98b8420a9e8f",
+      "title": "Richardson Electronics, Ltd.",
+      "des": "velit donec diam neque vestibulum eget vulputate ut ultrices vel"
+    },
+    {
+      "id": "288df09e-5e07-4fee-bd9a-f5e515476f1d",
+      "title": "Kilroy Realty Corporation",
+      "des": "nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum"
+    },
+    {
+      "id": "91df0633-ab0e-476d-9570-ca3ad56c1cbf",
+      "title": "CBOE Holdings, Inc.",
+      "des": "ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit"
+    },
+    {
+      "id": "330395ee-e6c5-49de-bb9f-013014ed9a7a",
+      "title": "J.C. Penney Company, Inc. Holding Company",
+      "des": "maecenas tincidunt lacus at velit vivamus vel nulla eget eros"
+    },
+    {
+      "id": "6fedf719-cebf-4bf7-a617-27dd3e229a6d",
+      "title": "Genesis Energy, L.P.",
+      "des": "neque aenean auctor gravida sem praesent id massa id nisl"
+    },
+    {
+      "id": "2c03989c-7741-41b0-bfeb-7d705e06922b",
+      "title": "Home Bancorp, Inc.",
+      "des": "etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida"
+    },
+    {
+      "id": "ca58f054-281d-4c9f-8b3f-68c2ee4cfdc4",
+      "title": "UMH Properties, Inc.",
+      "des": "a nibh in quis justo maecenas rhoncus aliquam lacus morbi"
+    },
+    {
+      "id": "e9f15406-9249-41dc-b179-3c15f33a9da0",
+      "title": "SciClone Pharmaceuticals, Inc.",
+      "des": "in est risus auctor sed tristique in tempus sit amet"
+    },
+    {
+      "id": "b29c1fbf-64cb-4390-aa4a-dee9958f53ad",
+      "title": "Xactly Corporation",
+      "des": "quam turpis adipiscing lorem vitae mattis nibh ligula nec sem"
+    },
+    {
+      "id": "8384ff8b-a249-468e-b41d-6895a7734f4e",
+      "title": "Apollo Tactical Income Fund Inc.",
+      "des": "magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet"
+    },
+    {
+      "id": "b6e88e48-9ecc-4689-9a02-ada466cc183e",
+      "title": "Merus N.V.",
+      "des": "amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus"
+    },
+    {
+      "id": "e3391741-eddc-463b-aacb-11cec8e9ef22",
+      "title": "Blackrock Defined Opportunity Credit Trust",
+      "des": "vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id"
+    },
+    {
+      "id": "42c6b89e-5266-45ad-8d98-682a3abd7437",
+      "title": "Alliance MMA, Inc.",
+      "des": "amet turpis elementum ligula vehicula consequat morbi a ipsum integer"
+    },
+    {
+      "id": "4f2ad86c-5736-4b7b-8c44-da702b8cdd04",
+      "title": "Alliance One International, Inc.",
+      "des": "sed magna at nunc commodo placerat praesent blandit nam nulla"
+    },
+    {
+      "id": "2800f181-c361-4ad5-9135-76b839fbe1df",
+      "title": "Benitec Biopharma Limited",
+      "des": "sapien varius ut blandit non interdum in ante vestibulum ante"
+    },
+    {
+      "id": "89495c1d-0119-4b1f-b3bc-c44b827c531e",
+      "title": "LogMein, Inc.",
+      "des": "nullam porttitor lacus at turpis donec posuere metus vitae ipsum"
+    },
+    {
+      "id": "19b627b1-f705-476d-9311-78947ece1121",
+      "title": "The Dixie Group, Inc.",
+      "des": "nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum"
+    },
+    {
+      "id": "3354d38c-fe4b-476e-a41b-a3fad56bad01",
+      "title": "Gabelli Dividend",
+      "des": "at velit eu est congue elementum in hac habitasse platea"
+    },
+    {
+      "id": "b846d0b2-1c15-45ac-aa2c-7a8dd18e9b98",
+      "title": "Catasys, Inc.",
+      "des": "vel enim sit amet nunc viverra dapibus nulla suscipit ligula"
+    },
+    {
+      "id": "d5cf46cf-df15-4780-b5c9-d9a15580c2f4",
+      "title": "VelocityShares Daily 2x VIX Medium-Term ETN",
+      "des": "at vulputate vitae nisl aenean lectus pellentesque eget nunc donec"
+    },
+    {
+      "id": "0ccc4d88-6f37-448b-8efd-87f67eb8cbef",
+      "title": "Interface, Inc.",
+      "des": "enim in tempor turpis nec euismod scelerisque quam turpis adipiscing"
+    },
+    {
+      "id": "2120fc68-2d8f-41c6-86c4-d95e6d6d764d",
+      "title": "Spirit Aerosystems Holdings, Inc.",
+      "des": "magna ac consequat metus sapien ut nunc vestibulum ante ipsum"
+    },
+    {
+      "id": "60c4c913-905b-43ef-b72b-3b38fd66b7de",
+      "title": "Wells Fargo & Company",
+      "des": "ante ipsum primis in faucibus orci luctus et ultrices posuere"
+    },
+    {
+      "id": "b74f1419-2f3a-496f-9f67-de9ccc2cdc42",
+      "title": "Nuveen North Carolina Quality Municipal Income Fd",
+      "des": "nisl ut volutpat sapien arcu sed augue aliquam erat volutpat"
+    },
+    {
+      "id": "93601176-98ae-4d4d-a5d9-05a1c212876d",
+      "title": "Heico Corporation",
+      "des": "vel sem sed sagittis nam congue risus semper porta volutpat"
+    },
+    {
+      "id": "63b6cd85-45ef-4347-8ecb-5e67954ef21b",
+      "title": "Five Prime Therapeutics, Inc.",
+      "des": "primis in faucibus orci luctus et ultrices posuere cubilia curae"
+    },
+    {
+      "id": "71b3d579-03b3-4b6f-a338-a4d6d8eb99dc",
+      "title": "FIRST REPUBLIC BANK",
+      "des": "viverra eget congue eget semper rutrum nulla nunc purus phasellus"
+    },
+    {
+      "id": "2a26010b-8de8-40a8-8f74-13beef27a5d6",
+      "title": "NxStage Medical, Inc.",
+      "des": "ut mauris eget massa tempor convallis nulla neque libero convallis"
+    },
+    {
+      "id": "34d9d2b1-b38e-40c3-b6f0-4d2f8a137c1b",
+      "title": "Compugen Ltd.",
+      "des": "lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum"
+    },
+    {
+      "id": "ad636d49-1438-4ea4-b344-0c8c412c1452",
+      "title": "Genocea Biosciences, Inc.",
+      "des": "adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam"
+    },
+    {
+      "id": "257b8241-3ea7-46b2-a856-1ada1d76c359",
+      "title": "Shore Bancshares Inc",
+      "des": "in lacus curabitur at ipsum ac tellus semper interdum mauris"
+    },
+    {
+      "id": "3b002c5e-1c47-4087-9299-86f331f6601e",
+      "title": "Calix, Inc",
+      "des": "mauris enim leo rhoncus sed vestibulum sit amet cursus id"
+    },
+    {
+      "id": "dc94d123-59c9-4321-881d-f3a5b9a9a747",
+      "title": "Bank Of Montreal",
+      "des": "sed tristique in tempus sit amet sem fusce consequat nulla"
+    },
+    {
+      "id": "cc7402ea-22e9-4955-8362-1a1692d9c4be",
+      "title": "Tuttle Tactical Management Multi-Strategy Income ETF",
+      "des": "mi in porttitor pede justo eu massa donec dapibus duis"
+    },
+    {
+      "id": "a761e37e-fc00-4685-bd11-618fea044e7f",
+      "title": "First Community Financial Partners, Inc.",
+      "des": "sit amet nunc viverra dapibus nulla suscipit ligula in lacus"
+    },
+    {
+      "id": "634d4a76-e5f5-49e5-8898-8f729881eb0c",
+      "title": "Sprint Corporation",
+      "des": "id nisl venenatis lacinia aenean sit amet justo morbi ut"
+    },
+    {
+      "id": "827a89a7-ddab-44ce-8ebf-6551c9d111b6",
+      "title": "Canadian Pacific Railway Limited",
+      "des": "integer non velit donec diam neque vestibulum eget vulputate ut"
+    },
+    {
+      "id": "3db42f19-5729-4d00-b6c0-768a194fbd2f",
+      "title": "Western Asset/Claymore U.S Treasury Inflation Prot Secs Fd 2",
+      "des": "vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis"
+    },
+    {
+      "id": "7b3cee52-1aac-460e-9172-a459170cc3ae",
+      "title": "Cheetah Mobile Inc.",
+      "des": "sit amet sem fusce consequat nulla nisl nunc nisl duis"
+    },
+    {
+      "id": "dc331f23-1ce6-421f-9a63-d36103fcc49e",
+      "title": "Liberty Media Corporation",
+      "des": "ante nulla justo aliquam quis turpis eget elit sodales scelerisque"
+    },
+    {
+      "id": "0db2fefa-e9c6-4e23-a0d0-8e541a53b862",
+      "title": "Southern California Edison Company",
+      "des": "id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum"
+    },
+    {
+      "id": "ab4ed394-49aa-47c1-8a32-514bb97c8f38",
+      "title": "Federated Investors, Inc.",
+      "des": "morbi vel lectus in quam fringilla rhoncus mauris enim leo"
+    },
+    {
+      "id": "d8ceb081-1989-4eb3-b367-54de0771519f",
+      "title": "ArcelorMittal",
+      "des": "quisque erat eros viverra eget congue eget semper rutrum nulla"
+    },
+    {
+      "id": "7712b4d5-c60b-4045-a6c8-f7d8dba59394",
+      "title": "National Oilwell Varco, Inc.",
+      "des": "viverra pede ac diam cras pellentesque volutpat dui maecenas tristique"
+    },
+    {
+      "id": "ca33e80f-2341-4464-bb91-3311eb1b8404",
+      "title": "Paycom Software, Inc.",
+      "des": "nec dui luctus rutrum nulla tellus in sagittis dui vel"
+    },
+    {
+      "id": "1eb79229-d383-472a-912d-9a2fc3c0b8ee",
+      "title": "NN, Inc.",
+      "des": "nec sem duis aliquam convallis nunc proin at turpis a"
+    },
+    {
+      "id": "fa79514c-764f-4bc2-a37a-1de86cfc91b6",
+      "title": "VTTI Energy Partners LP",
+      "des": "donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi"
+    },
+    {
+      "id": "fc96b8c1-42d1-4db1-967d-ea8eec5d9261",
+      "title": "Lam Research Corporation",
+      "des": "lacus at turpis donec posuere metus vitae ipsum aliquam non"
+    },
+    {
+      "id": "1958c4c5-2b7a-4220-bea1-bada04849f25",
+      "title": "Cross Country Healthcare, Inc.",
+      "des": "maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices"
+    },
+    {
+      "id": "88527b3a-45e9-4dc6-a095-11261d4156ce",
+      "title": "Cliffs Natural Resources Inc.",
+      "des": "donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi"
+    },
+    {
+      "id": "6d65a9ae-9c05-4fda-ad51-30b1a71bb78d",
+      "title": "PNC Financial Services Group, Inc. (The)",
+      "des": "fermentum donec ut mauris eget massa tempor convallis nulla neque"
+    },
+    {
+      "id": "a693831f-8ee2-4bac-bd2e-e38397600e59",
+      "title": "Cogentix Medical, Inc.",
+      "des": "porttitor lorem id ligula suspendisse ornare consequat lectus in est"
+    },
+    {
+      "id": "76788a73-0855-450f-8e6e-3625fe6adce8",
+      "title": "Calgon Carbon Corporation",
+      "des": "quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit"
+    },
+    {
+      "id": "018480b7-8748-435d-bac8-67bd285e1f23",
+      "title": "Biostage, Inc.",
+      "des": "et magnis dis parturient montes nascetur ridiculus mus etiam vel"
+    },
+    {
+      "id": "99631b24-2a2d-4727-b22f-ef722d303c26",
+      "title": "SPI Energy Co., Ltd.",
+      "des": "eleifend luctus ultricies eu nibh quisque id justo sit amet"
+    },
+    {
+      "id": "9298fd4e-01e6-4b54-a031-b3d73c5f25c4",
+      "title": "Lombard Medical, Inc.",
+      "des": "velit eu est congue elementum in hac habitasse platea dictumst"
+    },
+    {
+      "id": "83e43cde-7d9d-4a3b-8160-d0f8c90abf0e",
+      "title": "SciClone Pharmaceuticals, Inc.",
+      "des": "platea dictumst morbi vestibulum velit id pretium iaculis diam erat"
+    },
+    {
+      "id": "2e7c9991-07bf-4e49-a9dd-c74a340591b1",
+      "title": "China Unicom (Hong Kong) Ltd",
+      "des": "eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan"
+    },
+    {
+      "id": "ab761b98-402f-4a1d-a1af-fd716de1bb75",
+      "title": "Crown Holdings, Inc.",
+      "des": "morbi vestibulum velit id pretium iaculis diam erat fermentum justo"
+    },
+    {
+      "title": "nam",
+      "des": "nam",
+      "id": "uvhCP9HOJ"
+    }
+  ],
+  "trans": [
+    {
+      "bookID": "Harry Potter",
+      "userID": "Nam",
+      "isComplete": "true",
+      "id": "hCbLQvZuC"
+    },
+    {
+      "bookID": "Harry Potter",
+      "userID": "Nam",
+      "isComplete": "true",
+      "id": "Wm6pX8P57"
+    },
+    {
+      "bookID": "PIMCO Income Strategy Fund II",
+      "userID": "n",
+      "isComplete": "false",
+      "id": "ZRUM2sV5C"
+    }
+  ],
+  "users": [
+    {
+      "name": "Dương Bảo Nam",
+      "age": "20",
+      "email": "nam",
+      "password": "$2b$10$WtEBDxxZ3ENYfjOxq9YnNeNMkMA2jh3fcmRmNfwAH2jM8gvgKdZo6",
+      "isAdmin": "false",
+      "id": "ODe27lcH0",
+      "avatar": "uploads/40ea9525cbaf55ff740b5b726034aff1"
+    },
+    {
+      "name": "n",
+      "age": "n",
+      "email": "n",
+      "password": "nam",
+      "isAdmin": "false",
+      "id": "8ShtNDlEe",
+      "avatar": "uploads/76c24d81f8fd2e6d891d0627af4c0879"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "rS8s04euz",
+      "cart": {
+        "c917d62f-8160-475a-8ef7-aec2ecd92a92": 1,
+        "6dfa9616-3f3e-4319-b38d-0ae5f99f9226": 2
+      }
+    }
+  ]
+}

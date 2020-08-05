@@ -1,0 +1,48 @@
+extends ../layouts/common
+
+block content
+  h1 Users List
+  if errors
+    each error in errors
+      .alert.alert-danger= error
+      
+  form.d-flex.flex-column.w-5(action="/users/add", method="POST", enctype="multipart/form-data")
+    .form-group
+      label Name
+      input.form-control(type="text",name='name')
+    .form-group
+      label Age 
+      input.form-control(type="text",name='age')
+    .form-group
+      label Email
+      input.form-control(type="text",name='email')
+    .form-group
+      label Password 
+      input.form-control(type="text",name='password')
+      input.form-control(type="hidden",name='isAdmin' value="false")
+    .form-group
+      label Avatar 
+      input.form-control-file(type="file",name='avatar')
+      
+    button.btn.btn-primary.button Add new
+    
+  table.table
+    thead-dark
+      tr.table
+        td(scope='col') Avatar
+        td(scope='col') Title
+        td(scope='col') Description
+    tbody
+      each user in users
+        tr
+          td
+            img(src=user.avatar, style="width: 32px")
+          td
+            a(href="/users/info/" + user.id) 
+              span= user.name
+          td
+            a(href="/users/info/" + user.id)
+              span= user.age
+
+
+  a(href="/") Home...

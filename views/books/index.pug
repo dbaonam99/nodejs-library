@@ -1,0 +1,40 @@
+extends ../layouts/common
+
+block content
+  h1 Books List
+  a total
+  a= a
+  
+  form.d-flex.flex-column.w-5(action="/books/add", method="POST")
+    .form-group
+      label Title
+      input.form-control(type="text",name='title')
+    .form-group
+      label Description 
+      input.form-control(type="text",name='des')
+    button.btn.btn-primary.button Add new
+    
+  .d-flex.row.mt-5.mb-3.justify-content-between
+    each book in books
+      .card.mt-4(style='width: 24%')
+        img.card-img-top(src='https://loremflickr.com/320/240')
+        .card-body
+          h5.card-title= book.title
+          p.card-text= book.des
+          .d-flex.justify-content-between
+            a.btn.btn-primary(href="/books/info/" + book.id) Info
+            a.btn.btn-primary(href="/cart/add/" + book.id) Add to cart
+  
+  ul.pagination.justify-content-end
+    li.page-item.disabled
+      a.page-link(href='#', tabindex='-1', aria-disabled='true') Previous
+    li.page-item
+      a.page-link(href='./books?page=1') 1
+    li.page-item
+      a.page-link(href='./books?page=2') 2
+    li.page-item
+      a.page-link(href='./books?page=3') 3
+    li.page-item
+      a.page-link(href='#') Next
+
+  a(href="/") Home...
