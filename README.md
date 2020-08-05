@@ -1,1 +1,1 @@
-# nodejs-libraby
+# nodejs-library
