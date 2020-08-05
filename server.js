@@ -1,6 +1,9 @@
 const express = require("express");
 var bodyParser = require("body-parser");
 var cookieParser = require("cookie-parser");
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost:27017/library');
 
 var bookRoutes = require('./routes/book');
 var userRoutes = require('./routes/user');

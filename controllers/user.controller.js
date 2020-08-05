@@ -1,26 +1,27 @@
 const shortid = require("shortid");
-var db = require("../db.js");
+
+var User = require("../models/user.model");
 
 module.exports.index = function(req, res) {
-  res.render("users/index", {
-    users: db.get("users").value()
-  });
+  User.find().then(function(users) {
+    res.render("users/index", {
+      users: users
+    });
+  })
 };
 
-module.exports.info = function(req, res) {
+module.exports.info = async function(req, res) {
   var id = req.params.id;
-	var userInfo = db.get('users').find({id: id}).value();
+	var userInfo = await MyModel.find({ id: id }).exec();
 
-  
 	res.render('users/info', {
 		users: userInfo
 	});
 };
 
-module.exports.add = function(req, res) {
-  req.body.id = shortid.generate();
+module.exports.add = async function(req, res) {
   req.body.avatar = req.file.path.split("/").slice(1).join("/");
-  db.get("users").push(req.body).write();
+  await User.create(req.body);
   res.redirect('/users');
 };
 

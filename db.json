@@ -544,14 +544,23 @@
       "isAdmin": "false",
       "id": "8ShtNDlEe",
       "avatar": "uploads/76c24d81f8fd2e6d891d0627af4c0879"
+    },
+    {
+      "name": "cc",
+      "age": "cc",
+      "email": "cc",
+      "password": "cc",
+      "isAdmin": "false",
+      "id": "Weejj2q6g",
+      "avatar": "uploads/674adc9a8136c2cccd2f52de7d8e34e8"
     }
   ],
   "sessions": [
     {
       "id": "rS8s04euz",
       "cart": {
-        "c917d62f-8160-475a-8ef7-aec2ecd92a92": 1,
-        "6dfa9616-3f3e-4319-b38d-0ae5f99f9226": 2
+        "c917d62f-8160-475a-8ef7-aec2ecd92a92": 3,
+        "6dfa9616-3f3e-4319-b38d-0ae5f99f9226": 4
       }
     }
   ]
