@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 var cookieParser = require("cookie-parser");
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/library');
+mongoose.connect('mongodb://localhost:27017/library', { useNewUrlParser: true , useUnifiedTopology: true});
 
 var bookRoutes = require('./routes/book');
 var userRoutes = require('./routes/user');

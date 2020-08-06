@@ -1,5 +1,4 @@
 var bcrypt = require('bcrypt');
-const shortid = require("shortid");
 var wrong = 0;
 
 var nodemailer = require('nodemailer');
@@ -30,7 +29,6 @@ module.exports.registerIndex = function(req, res) {
 };
 
 module.exports.addNewAccount = async function(req, res) {
-  req.body.id = shortid.generate();
   
   var password = req.body.password;
   
@@ -84,8 +82,8 @@ module.exports.postLogin = async function(req, res) {
   } catch {
     res.status(500).send();
   }
-  
-  res.cookie('userId', user.id,{
+
+  res.cookie('userId', user._id,{
     signed: true
   })
   
