@@ -5,7 +5,7 @@ block content
 
   form(action="/users/set", method="POST")
     input(name="name", type="text")
-    input(name="id", type="hidden", value=users.id)
+    input(name="id", type="hidden", value=users._id)
     button Update
 
   p Tên:
@@ -13,5 +13,5 @@ block content
   p Tuổi: 
     span= users.age 
   form(action="/users/remove", method="POST")
-    input(name="id", type="hidden", value=users.id)
+    input(name="id", type="hidden", value=users._id)
     button Delete user

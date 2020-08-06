@@ -12,30 +12,41 @@ module.exports.index = function(req, res) {
 
 module.exports.info = async function(req, res) {
   var id = req.params.id;
-	var userInfo = await MyModel.find({ id: id }).exec();
-
-	res.render('users/info', {
-		users: userInfo
-	});
+	User.findById({ _id: id }).then(function(users) {
+    res.render('users/info', {
+      users: users
+    });
+  });
 };
 
 module.exports.add = async function(req, res) {
+  var errors = [];
+  if(!req.body.name || !req.body.age || !req.body.email || !req.body.password) {
+    errors.push("Hãy điền đầy đủ thông tin!")
+  }
+  console.log(errors);
+  if(errors.length) {
+    User.find().then(function(users) {
+      res.render("users/index", {
+        users: users,
+        errors: errors
+      });
+    })
+    return;
+  }
   req.body.avatar = req.file.path.split("/").slice(1).join("/");
   await User.create(req.body);
   res.redirect('/users');
 };
 
 module.exports.set = function(req, res) {
-  db.get('users')
-    .find({ id: req.body.id })
-    .assign({ name: req.body.name})
-    .write()
-  res.redirect("/users/info/" + req.body.id);
+  User.findByIdAndUpdate(req.body.id, {name : req.body.name}, function() {
+    res.redirect("/users/info/" + req.body.id);
+  })
 };
 
 module.exports.remove = function(req, res) {
-  db.get('users')
-  .remove({ id: req.body.id })
-  .write()
-  res.redirect("/users");
+  User.findByIdAndRemove(req.body.id, function() {
+    res.redirect("/users");
+  })
 };

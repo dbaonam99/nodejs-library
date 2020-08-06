@@ -4,6 +4,6 @@ const adapter = new FileSync("db.json");
 
 const db = low(adapter);
 
-db.defaults({ books: [], users: [] , trans: [] , sessions: []}).write();
+db.defaults({ books: [] , trans: [] , sessions: []}).write();
 
 module.exports = db;

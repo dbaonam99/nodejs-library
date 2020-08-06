@@ -7,7 +7,11 @@ var userSchema = new mongoose.Schema({
     password: String,
     isAdmin: Boolean,
     avatar: String
-})
+	},
+    {
+    	versionKey: false
+    }
+)
 
 var User = mongoose.model('User', userSchema, 'users');
 

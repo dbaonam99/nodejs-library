@@ -526,35 +526,6 @@
       "id": "ZRUM2sV5C"
     }
   ],
-  "users": [
-    {
-      "name": "Dương Bảo Nam",
-      "age": "20",
-      "email": "nam",
-      "password": "$2b$10$WtEBDxxZ3ENYfjOxq9YnNeNMkMA2jh3fcmRmNfwAH2jM8gvgKdZo6",
-      "isAdmin": "false",
-      "id": "ODe27lcH0",
-      "avatar": "uploads/40ea9525cbaf55ff740b5b726034aff1"
-    },
-    {
-      "name": "n",
-      "age": "n",
-      "email": "n",
-      "password": "nam",
-      "isAdmin": "false",
-      "id": "8ShtNDlEe",
-      "avatar": "uploads/76c24d81f8fd2e6d891d0627af4c0879"
-    },
-    {
-      "name": "cc",
-      "age": "cc",
-      "email": "cc",
-      "password": "cc",
-      "isAdmin": "false",
-      "id": "Weejj2q6g",
-      "avatar": "uploads/674adc9a8136c2cccd2f52de7d8e34e8"
-    }
-  ],
   "sessions": [
     {
       "id": "rS8s04euz",
@@ -562,6 +533,37 @@
         "c917d62f-8160-475a-8ef7-aec2ecd92a92": 3,
         "6dfa9616-3f3e-4319-b38d-0ae5f99f9226": 4
       }
+    },
+    {
+      "id": "GzwXybpGT",
+      "cart": {
+        "6dfa9616-3f3e-4319-b38d-0ae5f99f9226": 1,
+        "80e42397-2935-4986-8c14-8104e50ba3a1": 1
+      }
+    },
+    {
+      "id": "35-sCj6A2"
+    },
+    {
+      "id": "R-5YGZndv"
+    },
+    {
+      "id": "_GjKV2vgw"
+    },
+    {
+      "id": "ZqAb66Y6C"
+    },
+    {
+      "id": "JzAfWGGc2"
+    },
+    {
+      "id": "JSfX-Ye7Fq"
+    },
+    {
+      "id": "GmcHDLrze8"
+    },
+    {
+      "id": "GhF7MdBCh"
     }
   ]
 }

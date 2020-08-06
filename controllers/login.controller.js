@@ -1,9 +1,9 @@
 var bcrypt = require('bcrypt');
 const shortid = require("shortid");
-var db = require("../db.js");
 var wrong = 0;
 
 var nodemailer = require('nodemailer');
+var User = require("../models/user.model");
 
 // send an Email
 var transporter = nodemailer.createTransport({
@@ -38,21 +38,16 @@ module.exports.addNewAccount = async function(req, res) {
     const salt = await bcrypt.genSalt();
     req.body.password = await bcrypt.hash(password, salt);
   } catch {}
-  
-  db.get("users").push(req.body).write();
+  await User.create(req.body);
   res.redirect('/login');
 };
-
-module.exports.sendEmail = function(req, res) {
-  
-}
 
 module.exports.postLogin = async function(req, res) {
   var email = req.body.email;
 	var password = req.body.password;
 
-  var user = db.get('users').find({email: email}).value();
-  
+  var user = await User.findOne({ email: email });
+
   if(!user) {
     wrong++;
     res.cookie('wrong', wrong);
