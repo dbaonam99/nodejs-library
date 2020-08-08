@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
-var sessionSchema = new mongoose.Schema({
-	id: String
+var sessionSchema = new mongoose.Schema(
+	{
+		sessionId: String,
+		cart: String
 	},
     {
     	versionKey: false

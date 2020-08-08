@@ -5,7 +5,7 @@ block content
 
   form(action="/books/set", method="POST")
     input(name="title", type="text")
-    input(name="id", type="hidden", value=books.id)
+    input(name="id", type="hidden", value=books._id)
     button Update
 
   p Tên:
@@ -13,5 +13,5 @@ block content
   p Description: 
     span= books.des 
   form(action="/books/remove", method="POST")
-    input(name="id", type="hidden", value=books.id)
+    input(name="id", type="hidden", value=books._id)
     button Delete book

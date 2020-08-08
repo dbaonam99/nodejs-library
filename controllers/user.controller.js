@@ -35,7 +35,10 @@ module.exports.add = async function(req, res) {
     return;
   }
   req.body.avatar = req.file.path.split("/").slice(1).join("/");
-  await User.create(req.body);
+  console.log(req.body);
+  await User.create(req.body, function(err, res) {
+    console.log(res);
+  });
   res.redirect('/users');
 };
 

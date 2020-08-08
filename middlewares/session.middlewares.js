@@ -7,8 +7,10 @@ module.exports = async function(req, res, next) {
     res.cookie('sessionId', sessionId, {
       signed: true
     });
-    await Session.create(req.signedCookies.sessionId);
-  }
 
+    console.log(sessionId);
+
+    await Session.create({sessionId : sessionId});
+  }
   next();
 }

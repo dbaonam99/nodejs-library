@@ -1,44 +1,42 @@
 const shortid = require("shortid");
-var db = require("../db.js");
+var Book = require("../models/book.model");
 
 module.exports.index = function(req, res) {
-  var page = req.query.page || 1;
-  var perPage = 8;
+  // var page = req.query.page || 1;
+  // var perPage = 8;
   
-  var start = (page -1) * perPage;
-  var end = page * perPage;
-  res.render("books/index", {
-    books: db.get("books").value().slice(start, end)
-  });
-};
+  // var start = (page -1) * perPage;
+  // var end = page * perPage;
 
+  Book.find().limit(8).then(function(books) {
+    res.render("books/index", {
+      books: books
+    });
+  })
+};
 
 module.exports.info = function(req, res) {
   var id = req.params.id;
-	var bookInfo = db.get('books').find({id: id}).value();
-
-	res.render('books/info', {
-		books: bookInfo
-	});
+  Book.findById({ _id: id }).then(function(books) {
+    res.render('books/info', {
+      books: books
+    });
+  });
 };
 
-module.exports.add = function(req, res) {
-  req.body.id = shortid.generate();
-  db.get("books").push(req.body).write();
+module.exports.add = async function(req, res) {
+  await Book.create(req.body);
   res.redirect('/books');
 };
 
 module.exports.set = function(req, res) {
-  db.get('books')
-    .find({ id: req.body.id })
-    .assign({ title: req.body.title})
-    .write()
-  res.redirect("/books/info/" + req.body.id);
+  Book.findByIdAndUpdate(req.body.id, {title : req.body.title}, function() {
+    res.redirect("/books/info/" + req.body.id);
+  })
 };
 
 module.exports.remove = function(req, res) {
-  db.get('books')
-  .remove({ id: req.body.id })
-  .write()
-  res.redirect("/books");
+  Book.findByIdAndRemove(req.body.id, function() {
+    res.redirect("/books");
+  })
 };
