@@ -1,58 +1,60 @@
 const shortid = require("shortid");
-var db = require("../db.js");
+var Trans = require("../models/transaction.model");
+var User = require("../models/user.model");
+var Book = require("../models/book.model");
 
-module.exports.index = function(req, res) {
-  res.render("transaction/index", {
-    books: db.get("books").value(),
-    users: db.get("users").value(),
-    trans: db.get("trans").value(),
-  });
-};
+module.exports.index = async function(req, res) {
+  var books = await Book.find();
+  var users = await User.find();
+  var trans = await Trans.find();
+  res.render("transaction/index",{
+    books: books,
+    users: users,
+    trans: trans
+  })
+}
 
-module.exports.info = function(req, res) {
+module.exports.info = async function(req, res) {
   var id = req.params.id;
-	var transInfo = db.get('trans').find({id: id}).value();
+
+  var transInfo = await Trans.findById({ _id: id });
 
 	res.render('transaction/info', {
 		trans: transInfo
 	});
 };
 
-module.exports.complete = function(req, res) {
-  var inputID = req.params.id;
-	var transInfo = db.get('trans').find({id: inputID}).value();
-  var oldTransInfo = db.get('trans').value();
+module.exports.complete = async function(req, res) {
   var errors = [];
+  console.log(req.params.id);
+  try {
+    var transInfo = await Trans.findById(req.params.id);
+  } catch {}
   if (transInfo == null) {
     errors.push('Không tìm thấy ID này!');
     res.render('transaction/trangthai', {
 		  errors: errors
 	  });
-  } 
+  }
   else {
     res.render('transaction/trangthai', {
-      trans: oldTransInfo
+      trans: transInfo
     });
   }
 };
 
-module.exports.add = function(req, res) {
-  req.body.id = shortid.generate();
-  db.get("trans").push(req.body).write();
+module.exports.add = async function(req, res) {
+  await Trans.create(req.body);
   res.redirect('/transaction');
 };
 
-module.exports.remove = function(req, res) {
-  db.get('trans')
-  .remove({ id: req.body.id })
-  .write()
+module.exports.remove = async function(req, res) {
+  await Trans.findByIdAndRemove({_id: req.body.id});
   res.redirect("/transaction");
 };
 
-module.exports.postComplete = function(req, res) {
-  db.get('trans')
-    .find({ id: req.body.id })
-    .assign({ isComplete: "true"})
-    .write()
-  res.redirect("/transaction");
+module.exports.postComplete = async function(req, res) {
+  Trans.findByIdAndUpdate(req.body.id, {isComplete: "true"}, function() {
+    res.redirect("/transaction");
+  })
 };

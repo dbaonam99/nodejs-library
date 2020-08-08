@@ -1,5 +1,5 @@
 const shortid = require("shortid");
-var db = require("../db.js");
+var User = require("../models/user.model");
 
 module.exports.postAdd = function(req, res, next) {
   var errors = [];

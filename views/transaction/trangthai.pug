@@ -1,11 +1,14 @@
 extends ../layouts/common
 
 block content
-  
   if errors
     each error in errors
       .alert.alert-danger= error
   else
     form(action="/transaction/complete", method="POST")
-      input(name="id", type="hidden", value=trans.id)
+      input(name="id", type="hidden", value=trans._id)
       button Trả sách
+      p zxc
+      p= trans.userId
+      p= trans.bookId
+      p= trans._id

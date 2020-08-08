@@ -8,9 +8,19 @@ module.exports = async function(req, res, next) {
       signed: true
     });
 
-    console.log(sessionId);
-
     await Session.create({sessionId : sessionId});
   }
+  var session = await Session.findOne({sessionId:req.signedCookies.sessionId});
+
+  var count = 0;
+
+  if (session) {
+    for (let book of session.cart) {
+      count += book.quantity;
+    }
+  }
+
+  res.locals.a = count;
+
   next();
 }

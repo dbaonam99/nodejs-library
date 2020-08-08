@@ -1,6 +1,6 @@
 var Session = require("../models/session.model");
 
-module.exports.addToCart = function(req, res, next) {
+module.exports.addToCart = async function(req, res, next) {
   var bookId = req.params.productId;
   var sessionId = req.signedCookies.sessionId;
   
@@ -9,58 +9,23 @@ module.exports.addToCart = function(req, res, next) {
     return;
   }
 
-  // console.log(bookId);
-  
-  // var count = db.get("sessions")
-  //   .find({id: sessionId})
-  //   .get('cart.' + bookId, 0)
-  //   .value();
-  
-  // var totalCount = count + 1;
+  var session = await Session.findOne({sessionId : sessionId});
 
-  // db.get('sessions')
-  //   .find({ id : sessionId })
-  //   .set('cart.' + bookId, totalCount)
-  //   .write();
+  // var book = session.cart.find(book => book.bookId = bookId);
 
-  // var cart = {
-  //   bookId: 1
-  // }
-  
-  // console.log(sessionId);
-  // Session.find({sessionId: sessionId}, function(err, res) {
-  //   console.log(res);
-  // })
+  let book = session.cart.find(
+    cartItem => cartItem.bookId === bookId
+  );
 
-  // var cart = {
-  //   bookId: 1
-  // }
-  // console.log(cart);
-
-  // Session.find({sessionId: sessionId}, function(err, res) {
-  //   if (err) {
-  //     console.log(err);
-  //   }
-  //   console.log(res);
-  // }); 
-  
-  Session.findByIdAndUpdate({sessionId: sessionId}, { cart : "Zxc" }, function(err, res) {
-    if(err) console.log(err);
-    console.log(res);
-  });
-
-  // Session.findById(req.signedCookies.sessionId).then(function(err, res) {
-  //   console.log(res);
-  // });
-  
-  // var cart = db.get('sessions[0].cart').value();
-  
-  // var totalItem = 0;
-  // for (var item in cart) {
-  //   totalItem = totalItem + cart[item];
-  // }
-  
-  // res.locals.a = totalItem;
+  if(!book) {
+    Session.findOneAndUpdate({sessionId: sessionId}, { $push: {cart : { bookId, quantity: 1} }}, function(err, res) {
+      if(err) console.log(err);
+      console.log(res);
+    });
+  } else {
+    book.quantity += 1;
+    session.save();
+  }
   
   res.redirect('/books');
 }

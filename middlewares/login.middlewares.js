@@ -6,7 +6,7 @@ module.exports.requireAuth = async function(req, res, next) {
     return;
   }
   
-  var user = await User.findByIdAndUpdate({_id: req.signedCookies.userId});
+  var user = await User.find({_id: req.signedCookies.userId});
 
   if (!user) {
     res.redirect('/login');
