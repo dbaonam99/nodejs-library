@@ -86,6 +86,13 @@ module.exports.postLogin = async function(req, res) {
   res.cookie('userId', user._id,{
     signed: true
   })
+
+  res.locals.user = user;
   
   res.redirect('/');
+};
+
+module.exports.logout = function(req, res) {
+  res.clearCookie("userId");
+  res.redirect("/");
 };

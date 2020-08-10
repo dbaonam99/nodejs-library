@@ -6,24 +6,46 @@ html
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js', integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI', crossorigin='anonymous')
     link(rel="stylesheet", href="/custom.css")
     link(rel="icon", href="https://cdn.glitch.com/4a5f62d5-f321-40e6-990a-bf5a36aa815a%2Ficon.png?v=1594442026337", type="image/icon type")
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
   body
-    nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
-      a.navbar-brand(href='/') Coderx.Tokyo
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-          li.nav-item.active
-            a.nav-link(href='/')
-              | Home 
-              span.sr-only (current)
-          li.nav-item
-            a.nav-link(href='./books') Books
-          li.nav-item
-            a.nav-link(href='./users') Users
-          li.nav-item
-            a.nav-link(href='./transaction') Transactions
-      if user
+    if user
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+        a.navbar-brand(href='/') 
+          img(src="https://openlibrary.org/static/images/openlibrary-logo-tighter.svg" height="30px")
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            if (adminRole.length == 0)
+              li.nav-item.active
+                a.nav-link(href='../books/' + user._id) Shop
+            else
+              li.nav-item.active
+                a.nav-link(href='./users') Users
+              li.nav-item
+                a.nav-link(href='./transaction') Transactions
         p= user.name
-    .container.pt-5
+        
+        form.form-inline.my-2.my-lg-0(action="/login/logout")
+          button.btn.btn-outline-light.my-2.my-sm-0 Logout
+
+    else 
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+        a.navbar-brand(href='/') 
+          img(src="https://openlibrary.org/static/images/openlibrary-logo-tighter.svg" height="30px")
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+
+
+        a(href="/checkout", style="color: #fff")
+          i.fa.fa-shopping-cart
+          span.mr-5#lblCartCount.badge.badge-warning= countCart
+        form.my-lg-0(action="/login")
+          button.btn.btn-primary.btn-login.pl-4.pr-4 Login
+
+    .container.pt-2
       block content
+
+  script(type='text/javascript', src='main.js')

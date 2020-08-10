@@ -2,7 +2,9 @@ const mongoose = require('mongoose');
 
 var bookSchema = new mongoose.Schema({
 	title: String,
-	des: String
+	des: String,
+	price: String,
+	userId: String
 	},
     {
     	versionKey: false

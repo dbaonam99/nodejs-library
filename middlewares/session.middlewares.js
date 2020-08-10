@@ -20,7 +20,7 @@ module.exports = async function(req, res, next) {
     }
   }
 
-  res.locals.a = count;
+  res.locals.countCart = count;
 
   next();
 }

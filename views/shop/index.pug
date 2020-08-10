@@ -1,9 +1,8 @@
-extends layouts/common
+extends ../layouts/common
 
 block content
   
-  if (adminRole.length == 0)
-    h1 Books
+    h1 Shop
 
     form.mt-3.d-flex(action='/search', method='Get')
       input#input.form-control.mr-2(type='text', name='q')
@@ -32,7 +31,5 @@ block content
         a.page-link(href='./?page=3') 3
       li.page-item
         a.page-link(href='#') Next
-  else
-    h1 ADMIN
   
 

@@ -3,7 +3,7 @@ const router = express.Router();
 
 var controller = require("../controllers/book.controller");
 
-router.get("/", controller.index);
+router.get("/:userId", controller.index);
 
 router.get("/info/:id", controller.info);
 

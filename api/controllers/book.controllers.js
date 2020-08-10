@@ -1,4 +1,3 @@
-const shortid = require("shortid");
 var Book = require("../../models/book.model");
 
 module.exports.index = async function(req, res) {

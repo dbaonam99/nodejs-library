@@ -1,17 +1,15 @@
 const shortid = require("shortid");
 var Book = require("../models/book.model");
+var User = require("../models/user.model");
 
-module.exports.index = function(req, res) {
-  // var page = req.query.page || 1;
-  // var perPage = 8;
-  
-  // var start = (page -1) * perPage;
-  // var end = page * perPage;
+module.exports.index = async function(req, res) {
+  var userId = req.signedCookies.userId;
 
-  Book.find().limit(8).then(function(books) {
-    res.render("books/index", {
-      books: books
-    });
+  var books = await Book.find({userId: userId});
+  var users = await User.find();
+  res.render("books/index",{
+    books: books,
+    users: users
   })
 };
 
@@ -26,7 +24,8 @@ module.exports.info = function(req, res) {
 
 module.exports.add = async function(req, res) {
   await Book.create(req.body);
-  res.redirect('/books');
+  console.log(req.body);
+  res.redirect('/books/' + req.signedCookies.userId);
 };
 
 module.exports.set = function(req, res) {
@@ -37,6 +36,6 @@ module.exports.set = function(req, res) {
 
 module.exports.remove = function(req, res) {
   Book.findByIdAndRemove(req.body.id, function() {
-    res.redirect("/books");
+    res.redirect('/books/' + req.signedCookies.userId);
   })
 };

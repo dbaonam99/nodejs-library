@@ -27,5 +27,5 @@ module.exports.addToCart = async function(req, res, next) {
     session.save();
   }
   
-  res.redirect('/books');
+  res.redirect('/');
 }
